@@ -4,6 +4,7 @@ local harpoon = require("harpoon")
 
 -- keybinds
 vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>ve", vim.cmd.Vex)
 
 -- telescope
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
