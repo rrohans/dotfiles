@@ -1,8 +1,7 @@
 require("remap")
 
 -- Theme
-vim.cmd.colorscheme "catppuccin-mocha"
-
+vim.cmd.colorscheme "kanagawa-paper"
 -- settings
 vim.opt.nu = true
 vim.opt.relativenumber = true
@@ -17,7 +16,8 @@ vim.opt.wrap = false
 
 vim.opt.swapfile = false
 vim.opt.backup = false
-
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.undofile = true
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
@@ -32,4 +32,3 @@ vim.opt.spell = true
 -- netrw settings
 vim.g.netrw_banner = 0
 vim.g.netrw_bufsettings = 'noma nomod nu rnu nobl nowrap ro'
-

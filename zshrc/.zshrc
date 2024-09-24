@@ -26,7 +26,7 @@ alias cp="cp -v"
 alias rm="rm -v"
 alias vim="nvim"
 alias imgcat="sh ~/imgcat.sh"
-
+alias icat="kitten icat"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
