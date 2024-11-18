@@ -21,6 +21,7 @@ return {
             lspconfig.pyright.setup({})
             lspconfig.clangd.setup({})
             lspconfig.biome.setup({})
+            lspconfig.rust_analyzer.setup({})
         end
     }
 }

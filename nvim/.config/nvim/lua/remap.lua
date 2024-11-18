@@ -6,6 +6,12 @@ local harpoon = require("harpoon")
 vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
 vim.keymap.set("n", "<leader>ve", vim.cmd.Vex)
 
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+vim.keymap.set("x", "<leader>p", [["_dP]])
+
 -- telescope
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
@@ -31,3 +37,5 @@ vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 vim.keymap.set("n", "<leader>fd", vim.lsp.buf.definition, {})
 vim.keymap.set({ 'n', 'v' }, "<leader>ca", vim.lsp.buf.code_action, {})
 vim.keymap.set("n", "<leader>fm", vim.lsp.buf.format)
+vim.keymap.set("n", "<leader>rn", function() vim.lsp.buf.rename() end, {})
+
